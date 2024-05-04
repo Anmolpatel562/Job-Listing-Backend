@@ -43,9 +43,13 @@ const jobSchema = new mongoose.Schema({
   information: {
     type: String,
   },
+  allInformation:{
+    type:String,
+  },
   refUserId:{
     type:mongoose.ObjectId,
   }
+
 });
 
 const Job = mongoose.model("Job", jobSchema);
